@@ -1,2 +1,11 @@
-CREATE DATABASE IF NOT EXISTS educational;
+CREATE DATABASE educational;
+
+CREATE TABLE PRODUCTS (
+    MFR_ID         СНАR (З) NOT NULL, 
+    PRODUCT_ID     CHAR (S) NOT NULL, 
+    DESCRIPTION    VARCНAR (20) NOT NULL, 
+    PRICE          DECIМAL (9, 2) NOT NULL, 
+    QTY_ON_HAND    INTEGER NOT NULL, 
+    PRIМARY КЕУ (MFR_ID, PRODUCT_ID) 
+);
 
